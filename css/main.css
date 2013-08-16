@@ -1,160 +1,135 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
+html {
+  height: 100%;
 }
-
-html, body { height: 100%; }
+/* CSS Document */
 
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-}
-
-ul.posts li {
-  line-height: 1.75em;
-}
-
-ul.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.site .header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.site .header h1.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.site .header h1.title a {
-  color: #a00;
-}
-
-.site .header h1.title a:hover {
-  color: #000;
-}
-
-.site .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.site .header a.extra:hover {
-  color: #000;
-}
-
-.site .meta {
-  color: #aaa;
-}
-
-.site .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
   overflow: hidden;
 }
 
-.site .footer .contact {
-  float: left;
-  margin-right: 3em;
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
 }
 
-.site .footer .contact a {
-  color: #8085C1;
-}
 
-.site .footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
 
-.site .footer .rss img {
-  border: 0;
-}
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
-
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
+#FixedFooter {
+  padding: 0px;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
   background-color: #333;
-  color: #FFF;
+  z-index: 1000;
+  margin: 0px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #666;
+}
+.WrapperMiddle {
+  padding: 0px;
+  height: 450px;
+  width: 960px;
+  overflow: hidden;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+.WrapperSpacer {
+  margin: 0px;
+  padding: 0px;
+  height: 0px;
+  width: 100%;
+}
+.IntroPage_bg {
+  background-color: #333;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  margin-top: 0px;
+}
+.WhatWeDo {
+  background-color: #0CF;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+}
+.WhatWeDo2 {
+  background-color: #CCC;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-right: 0px;
+  padding: 0px;
+}
+.FontSocial {
+  font-family: Lora, Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #CCC;
+  line-height: 30px;
+}
+.FontLoraGrey14 {
+  font-family: Lora, Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #333;
+}
+.FontSocial:hover {
+  color: #0CF;
+}
+.FontLora32Grey {
+  font-family: Lora, Georgia, "Times New Roman", Times, serif;
+  font-size: 32px;
+  color: #CCC;
+}
+.FontScrollPageHeadingsBig {
+  font-family: Oswald, Tahoma, Geneva, sans-serif;
+  font-size: 100px;
+  color: #333;
+}
+.FontOswaldGrey18 {
+  font-family: Oswald, Tahoma, Geneva, sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+.FontOswaldGrey24 {
+  font-family: Oswald, Tahoma, Geneva, sans-serif;
+  font-size: 32px;
+  color: #333;
+}
+.FontOswaldWhite24 {
+  font-family: Oswald, Tahoma, Geneva, sans-serif;
+  font-size: 32px;
+  color: #CCC;
+}
+.FontMenuGrey {
+  font-family: Oswald, Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  color: #CCC;
 }
 
-.post pre.terminal code {
-  background-color: #333;
+.FontMenuBlue {
+  font-family: Oswald, Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  color: #0CF;
 }
